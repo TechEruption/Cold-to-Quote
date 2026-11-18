@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Editable outreach drafts for an independent B2B lead-generation concept prototype.">
+  <title>Outreach | From Cold to Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="From Cold to Quote home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-copy">
+          <strong>From Cold to Quote</strong>
+          <span>Independent concept prototype</span>
+        </span>
+      </a>
+      <nav class="site-nav" data-app-nav aria-label="Main navigation"></nav>
+    </header>
+
+    <main class="page-content wide-content" id="main-content" tabindex="-1">
+      <p class="eyebrow">Practical, helpful communication</p>
+      <h1 class="page-title">Outreach studio</h1>
+      <p class="page-lede">Drafts are starting points. Personalise them to the application, and verify technical details before sending or publishing.</p>
+
+      <section class="outreach-checklist" aria-labelledby="checklist-title">
+        <h2 id="checklist-title">Before you reach out</h2>
+        <label><input type="checkbox"> <span>Personalise the first line</span></label>
+        <label><input type="checkbox"> <span>Offer value first</span></label>
+        <label><input type="checkbox"> <span>One clear ask</span></label>
+      </section>
+
+      <div class="outreach-tabs" role="tablist" aria-label="Outreach content">
+        <button class="outreach-tab" id="tab-linkedin" type="button" role="tab" aria-selected="true" aria-controls="panel-linkedin" tabindex="0">LinkedIn message</button>
+        <button class="outreach-tab" id="tab-emails" type="button" role="tab" aria-selected="false" aria-controls="panel-emails" tabindex="-1">Email sequence</button>
+        <button class="outreach-tab" id="tab-content" type="button" role="tab" aria-selected="false" aria-controls="panel-content" tabindex="-1">Content ideas</button>
+      </div>
+
+      <section class="outreach-panel" id="panel-linkedin" role="tabpanel" aria-labelledby="tab-linkedin"></section>
+      <section class="outreach-panel" id="panel-emails" role="tabpanel" aria-labelledby="tab-emails" hidden></section>
+      <section class="outreach-panel" id="panel-content" role="tabpanel" aria-labelledby="tab-content" hidden></section>
+      <p id="app-message" class="app-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer" data-app-footer></footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="data/accounts.js"></script>
+  <script src="data/outreach.js"></script>
+  <script src="js/outreach.js"></script>
+</body>
+</html>

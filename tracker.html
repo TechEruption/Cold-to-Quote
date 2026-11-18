@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local lead pipeline tracker for the independent From Cold to Quote concept prototype.">
+  <title>Lead Tracker | From Cold to Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="From Cold to Quote home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-copy">
+          <strong>From Cold to Quote</strong>
+          <span>Independent concept prototype</span>
+        </span>
+      </a>
+      <nav class="site-nav" data-app-nav aria-label="Main navigation"></nav>
+    </header>
+
+    <main class="page-content wide-content" id="main-content" tabindex="-1">
+      <p class="eyebrow">Lead pipeline</p>
+      <h1 class="page-title">Lead tracker</h1>
+      <p class="page-lede">Move accounts through the pipeline using each card's stage menu. Changes stay in this browser.</p>
+      <div class="tracker-board-wrap">
+        <section class="tracker-board" id="tracker-board" aria-label="Account pipeline board"></section>
+      </div>
+      <p id="app-message" class="app-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer" data-app-footer></footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="data/accounts.js"></script>
+  <script src="js/tracker.js"></script>
+</body>
+</html>

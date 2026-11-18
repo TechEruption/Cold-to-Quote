@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Illustrative target account list for an independent lead-generation concept prototype.">
+  <title>Target Accounts | From Cold to Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="From Cold to Quote home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-copy">
+          <strong>From Cold to Quote</strong>
+          <span>Independent concept prototype</span>
+        </span>
+      </a>
+      <nav class="site-nav" data-app-nav aria-label="Main navigation"></nav>
+    </header>
+
+    <main class="page-content wide-content" id="main-content" tabindex="-1">
+      <p class="eyebrow">Prospecting workspace</p>
+      <h1 class="page-title">Target accounts</h1>
+      <p class="page-lede">Illustrative companies to research before any outreach. Fit hypotheses and account details need verification.</p>
+
+      <section class="account-toolbar" aria-label="Search and filter accounts">
+        <label class="field-label search-field">
+          <span>Search accounts</span>
+          <input id="account-search" type="search" placeholder="Company, location, role..." autocomplete="off">
+        </label>
+        <label class="field-label">
+          <span>Segment</span>
+          <select id="segment-filter">
+            <option value="">All segments</option>
+          </select>
+        </label>
+        <label class="field-label">
+          <span>Priority</span>
+          <select id="priority-filter">
+            <option value="">All priorities</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </label>
+      </section>
+
+      <p class="result-count" id="account-count" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table class="accounts-table">
+          <thead>
+            <tr>
+              <th scope="col">Company</th>
+              <th scope="col">Segment</th>
+              <th scope="col">Location</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Stage</th>
+            </tr>
+          </thead>
+          <tbody id="account-rows"></tbody>
+        </table>
+        <p class="empty-state" id="account-empty" hidden>No accounts match these filters.</p>
+      </div>
+      <p id="app-message" class="app-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <div class="panel-backdrop" id="account-backdrop" hidden></div>
+    <aside class="account-panel" id="account-panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" hidden>
+      <div id="panel-content"></div>
+    </aside>
+    <footer class="site-footer" data-app-footer></footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="data/accounts.js"></script>
+  <script src="js/accounts.js"></script>
+</body>
+</html>

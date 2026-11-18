@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An independent B2B lead-generation concept prototype for JD Jones & Co.'s low-emission packing.">
+  <title>From Cold to Quote | Concept Prototype</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="From Cold to Quote home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-copy">
+          <strong>From Cold to Quote</strong>
+          <span>Independent concept prototype</span>
+        </span>
+      </a>
+      <nav class="site-nav" data-app-nav aria-label="Main navigation"></nav>
+    </header>
+
+    <main class="page-content wide-content dashboard-content" id="main-content" tabindex="-1">
+      <p class="eyebrow">B2B lead generation prototype</p>
+      <h1 class="page-title">From cold to quote</h1>
+      <p class="page-lede">An independent concept exploring how an industrial prospect could move from first contact to a quote request. Account fit and product details are illustrative and must be verified.</p>
+
+      <section class="dashboard-metrics" id="dashboard-metrics" aria-label="Pipeline summary"></section>
+
+      <div class="dashboard-grid">
+        <section class="dashboard-card conversion-card" aria-labelledby="conversion-heading">
+          <div class="section-heading-row">
+            <div>
+              <p class="card-kicker">Pipeline health</p>
+              <h2 id="conversion-heading">Conversion between stages</h2>
+            </div>
+            <span class="chart-note">Calculated from current account stages</span>
+          </div>
+          <div class="conversion-list" id="conversion-list"></div>
+        </section>
+
+        <section class="dashboard-card chart-card" aria-labelledby="chart-heading">
+          <div class="section-heading-row">
+            <div>
+              <p class="card-kicker">Account distribution</p>
+              <h2 id="chart-heading">Accounts by current stage</h2>
+            </div>
+          </div>
+          <div class="stage-chart" id="stage-chart" role="img" aria-label="Bar chart showing accounts at each pipeline stage"></div>
+        </section>
+      </div>
+
+      <section class="dashboard-card assumptions-card" aria-labelledby="assumptions-heading">
+        <div class="section-heading-row">
+          <div>
+            <p class="card-kicker">Planning inputs</p>
+            <h2 id="assumptions-heading">Assumptions (editable)</h2>
+          </div>
+          <p class="assumption-note">Illustrative targets only—not company results.</p>
+        </div>
+        <form id="target-form" class="target-form">
+          <label class="field-label">
+            <span>Reply rate target (%)</span>
+            <input id="reply-target" type="number" min="0" max="100" step="1" value="20" required>
+          </label>
+          <label class="field-label">
+            <span>Meeting rate target (%)</span>
+            <input id="meeting-target" type="number" min="0" max="100" step="1" value="10" required>
+          </label>
+          <label class="field-label">
+            <span>Quote rate target (%)</span>
+            <input id="quote-target" type="number" min="0" max="100" step="1" value="5" required>
+          </label>
+          <button class="primary-button" type="submit">Save assumptions</button>
+        </form>
+      </section>
+
+      <section class="how-it-works" aria-labelledby="how-heading">
+        <p class="eyebrow">The workflow</p>
+        <h2 id="how-heading">How this prototype works</h2>
+        <div class="workflow-steps" aria-label="Target, understand, reach out, follow up, track, improve">
+          <span>Target</span><span>Understand</span><span>Reach out</span>
+          <span>Follow up</span><span>Track</span><span>Improve</span>
+        </div>
+        <p>Start with a researched account, understand the role and application, share relevant information, and record the next step. Use what you learn to improve the next conversation.</p>
+      </section>
+
+      <p id="app-message" class="app-message" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer" data-app-footer></footer>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="data/accounts.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
