@@ -1,3 +1,6 @@
+live Demo: https://coldtoquote.netlify.app/
+
+
 # From Cold to Quote
 
 An independent interview-portfolio concept: a small B2B lead-generation prototype exploring how industrial prospects might move from target account to quote request for low-emission packing. It is not an official JD Jones website or a claim that the listed companies are qualified prospects.
